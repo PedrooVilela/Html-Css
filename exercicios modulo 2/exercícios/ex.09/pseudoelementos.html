@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+         SELETORES PERSONALIZADOS
+
+        # = id
+        . = class
+        : =pseudo-classe
+        :: = pseudo-elemento
+        > = filho direto(children)
+  
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+
+        a{
+            color: rgb(255, 0, 0);
+            text-decoration: none; /*tira o sublinhado*/
+            font-weight: bold;
+        }
+
+        a:visited{ /*links visitados*/
+            color: purple;
+        }
+
+        a:hover{ /*quando o mouse passar por cima do link*/
+            color: rgb(255, 170, 0);
+            text-decoration: underline;
+        }
+
+        a:active{ /*quando o link estiver sendo clicado*/
+            color: rgb(6, 87, 179);
+
+        }
+        .especial{ /*classe especial*/
+            background-color: rgb(224, 126, 126);
+        }
+        .especial:after { /*adiciona um conteudo antes do link*/
+            content: "->"; 
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+        .especial:before {/*adiciona um conteudo depois do link*/
+            content: "<-"; 
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+            
+
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" class="especial">Link 01</a></li>
+        <li><a href="#" class="especial">Link 02</a></li>
+        <li><a href="#">Link 03</a></li>
+</body>
+</html>

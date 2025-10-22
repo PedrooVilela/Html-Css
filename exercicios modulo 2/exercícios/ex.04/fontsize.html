@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes size em CSS</title>
+    <style> 
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        /* Medidas Absolutas
+        cm, mm, in, *(px), pt, pc
+
+        Medidas Relativas
+        *(em), ex, rem, vw, vh, vmin, %
+        
+        
+        *recomendacao da W3C é autlização de px e em;
+        
+       */
+       /* font-size: 16px; (tamanho padrão da maioria dos navegadores)*/
+       /* font-size: 1in; (1 polegada)    */
+       /* font-size: 2em; (Dobro do 16px) - 16 px geralmente = 1em    */
+
+
+       font-size: 1em;
+       font-weight:bolder ; /* negrito  */ 
+       font-style:italic ;  /*   Italico  */
+       text-decoration: underline;  /* sublinhado  */
+    }
+
+    h1{
+        /* Utilizando o Short hand, Atalho - fazendo tudo em uma linha só porem na ordem correta abaixo
+         font-style:italic ; 
+         font-weight:bolder ;
+         font-size: 1em;
+         font-family: 'Work Sans', sans-serif;
+
+         Por exemplo:
+        */
+         font: italic bolder 3em 'Work Sans', sans-serif;
+        
+       
+    }
+
+    </style>
+      
+
+
+</head>
+
+<body>
+    <h1>Fontes size</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ipsa pariatur illum sed rem repellat quidem dignissimos corrupti iste soluta, expedita suscipit animi aliquid numquam, molestias iure, vero recusandae perspiciatis!</p>
+    <h2>Subtitulo do exercicio</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur veniam dolores minus aperiam natus dicta non blanditiis sint! Blanditiis et laboriosam repudiandae tempora quibusdam, modi rerum quod aut! Voluptatibus, doloremque!</p>
+    
+</body>
+</html>
